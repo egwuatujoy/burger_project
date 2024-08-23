@@ -11,8 +11,8 @@ Home - Recipe - Popular - Delivery - Contact
 Love Every <br> Burger
 
 .home__description
-We serve the best burgers on the planet, 
-paving the way for cooking and preparing 
+We serve the best burgers on the planet,
+paving the way for cooking and preparing
 hot, delicious burgers.
 
 .button

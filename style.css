@@ -86,6 +86,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* ==== RE-SUABLE CSS CLASSES ==== */
 
 .container {
@@ -102,7 +107,7 @@ a {
   padding-block: 5rem 1rem;
 }
 
-.section-title {
+.section__title {
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: 2rem;
@@ -207,6 +212,118 @@ a {
   right: 1.5rem;
 }
 
+/* show-menu */
 .show-menu {
   top: 0;
+}
+/* shadow-header */
+.shadow-header {
+  box-shadow: 0 4px 16px hsla(22, 100%, 8%, 0.1);
+}
+
+/* MAIN SECTION ONE */
+
+.home-container {
+  padding-block: 3rem 2rem;
+  row-gap: 4rem;
+}
+
+.home-data {
+  text-align: center;
+  position: relative;
+}
+
+.home-title {
+  margin-bottom: 1rem;
+  font-size: var(--biggest-font-size);
+}
+
+.home-description {
+  margin-bottom: 2.5rem;
+}
+
+.home-sticker {
+  width: 40px;
+  rotate: 15deg;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+}
+.home-images {
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  position: relative;
+}
+/* BUTTON */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 1.5rem;
+  font-family: var(--second-font);
+  border-radius: 4rem;
+  transform: box-shadow 0.4s;
+}
+
+button:hover {
+  box-shadow: 0 8px 24px hsla(22, 100%, 8%, 0.2);
+}
+
+.home-ingredients {
+  width: 60px;
+  filter: var(--shadow-small-img);
+  position: absolute;
+  z-index: 2;
+}
+
+.home-burger,
+.home-dish {
+  filter: var(--shadow-big-img);
+}
+
+.home-burger {
+  width: 280px;
+  z-index: 2;
+}
+.home-dish {
+  max-width: initial;
+  width: 320px;
+  position: absolute;
+  bottom: -2.5rem;
+}
+
+.home-potato-1 {
+  left: -1rem;
+  top: 0.75rem;
+}
+
+.home-potato-2 {
+  right: -1rem;
+  bottom: -2rem;
+  rotate: 90deg;
+}
+
+.home-tomato-1 {
+  top: -1rem;
+  right: 6rem;
+  width: 40px;
+}
+
+.home-tomato-2 {
+  left: 5.5rem;
+  bottom: -1.5rem;
+  width: 40px;
+}
+
+.home-lettuce1 {
+  top: 2.5rem;
+  right: -2rem;
+  /* rotate: 90deg; */
+  transform: scaleX(-1);
+}
+
+.home-lettuce2 {
+  left: -2rem;
+  bottom: 1rem;
 }
