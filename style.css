@@ -127,6 +127,7 @@ img {
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: box-shadow 0.4s;
+  padding: 0 1rem;
 }
 
 .nav-container {
