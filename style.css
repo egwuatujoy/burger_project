@@ -230,9 +230,10 @@ img {
   width: 60%;
 }
 
-.home {
+.home-container {
   padding-block: 3rem 2rem;
   row-gap: 4rem;
+  justify-content: center;
 }
 
 .home-data {
@@ -659,4 +660,109 @@ button:hover {
 
 .show-scroll {
   bottom: 3rem;
+}
+
+/*BREAKPOINTS*/
+
+/* For small devices */
+@media screen and (max-width: 330px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .home-title {
+    font-size: 2.5rem;
+  }
+  .home-burger {
+    width: 210px;
+  }
+
+  .home-dish {
+    width: 250px;
+    bottom: -2rem;
+  }
+  .recipe-container {
+    column-gap: 5rem;
+  }
+  .recipe-img {
+    left: -8rem;
+  }
+  .popular-container {
+    grid-template-columns: 160px;
+    justify-content: center;
+  }
+  .footer-social {
+    grid-column: 1;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 540px) {
+  .home-container,
+  .delivery-container {
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+
+  .recipe-img {
+    position: initial;
+  }
+
+  .recipe-container {
+    grid-template-columns: 200px 230px;
+    justify-content: center;
+    column-gap: 3rem;
+  }
+  .popular-container {
+    grid-template-columns: repeat(2, 160px);
+
+    justify-content: center;
+  }
+  .contact {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .popular-container {
+    grid-template-columns: repeat(3, 160px);
+  }
+
+  .footer-social {
+    grid-column: initial;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  .footer-link:nth-child(1) {
+    justify-self: start;
+  }
+  .footer-link:nth-child(2) {
+    justify-self: end;
+    order: 2;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+  .section {
+    padding-block: 7rem 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 4.5rem;
+  }
+  .nav {
+    height: calc(--header-height) +  2rem;
+  }
 }
