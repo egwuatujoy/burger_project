@@ -172,7 +172,7 @@ img {
     top: -100%;
     left: 0;
     padding-block: 4.5rem 3.5rem;
-    /* background-color: var(--body-color); */
+    background-color: var(--body-color);
     width: 100%;
     box-shadow: 0 4px 16px hsla(22, 100%, 8%, 0.2);
     transition: top 0.5s;
