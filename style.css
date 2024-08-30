@@ -256,6 +256,7 @@ img {
   position: absolute;
   bottom: 2rem;
   right: 1rem;
+  opacity: 0.5;
 }
 .home-images {
   display: grid;
@@ -763,6 +764,226 @@ button:hover {
     margin-bottom: 4.5rem;
   }
   .nav {
-    height: calc(--header-height) +  2rem;
+    height: calc(--header-height) + 2rem;
+  }
+
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
+  .nav-lists {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .home-container {
+    grid-template-columns: 430px 605px;
+    align-items: center;
+    column-gap: 4rem;
+    padding-block: 7rem 4rem;
+  }
+
+  .home-data {
+    text-align: initial;
+  }
+
+  .home-description {
+    margin-bottom: 3.5rem;
+    padding-right: 3rem;
+  }
+
+  .home-sticker {
+    width: 60px;
+    right: 10rem;
+    bottom: 1rem;
+  }
+
+  .home-burger {
+    width: 490px;
+  }
+
+  .home-dish {
+    width: 560px;
+    bottom: -4rem;
+  }
+
+  .home-ingredients {
+    width: 100px;
+  }
+
+  .home-potato-1 {
+    left: -2rem;
+    top: 1.5rem;
+  }
+
+  .home-potato-2 {
+    right: -1.5rem;
+    bottom: -3rem;
+  }
+  .home-tomato-1 {
+    width: 70px;
+    top: -1.5rem;
+    right: 10rem;
+  }
+  .home-tomato-2 {
+    width: 70px;
+    left: 9.5rem;
+    bottom: -2.5rem;
+  }
+  .home-lettuce1 {
+    top: 4rem;
+    right: -3.5rem;
+  }
+  .home-lettuce2 {
+    left: -3.5rem;
+    bottom: 2rem;
+  }
+
+  .recipe-container {
+    grid-template-columns: 350px 300px;
+    column-gap: 8rem;
+    padding-bottom: 2rerm;
+  }
+
+  .recipe-img {
+    width: 350px;
+  }
+
+  .recipe-card {
+    column-gap: 1rem;
+  }
+
+  .recipe-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 1.25rem;
+    border-width: 5px;
+  }
+
+  .recipe-box img {
+    width: 85px;
+  }
+  .recipe-title {
+    font-size: var(--h3-font-size);
+  }
+  .recipe-description {
+    font-size: var(--normal-font-size);
+  }
+  .popular-container {
+    grid-template-columns: repeat(3, 250px);
+    gap: 6.5rem 4rem;
+    padding-block: 3rem;
+  }
+  .popular-card {
+    padding: 9.5rem 1.25rem 1.25rem;
+    border-radius: 2rem;
+    border-width: 6px;
+  }
+  .popular-title {
+    font-size: var(--h2-font-size);
+  }
+
+  .popular-price {
+    font-size: var(--h2-font-size);
+  }
+
+  .popular-button {
+    font-size: 1.5rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+  .popular-img {
+    width: 200px;
+    top: -3.5rem;
+  }
+
+  .delivery-container {
+    grid-template-columns: 440px 550px;
+    column-gap: 4rem;
+    align-items: center;
+    padding-block: 1rem;
+  }
+  .delivery-container .section-title,
+  .delivery-data {
+    text-align: initial;
+  }
+
+  .delivery-description {
+    margin-bottom: 3.5rem;
+  }
+  .delivery-img {
+    width: 550px;
+  }
+  .delivery-sticker {
+    width: 50px;
+    right: 8rem;
+    bottom: 0;
+  }
+
+  .contact {
+    max-width: initial;
+  }
+
+  .contact-container {
+    border-radius: 4rem;
+    padding-block: 4rem;
+  }
+
+  .contact-data {
+    grid-template-columns: repeat(2, max-content);
+    text-align: initial;
+    gap: 4.5rem 2rem;
+    order: 1;
+  }
+  .contact-content {
+    grid-template-columns: 420px 435px;
+    justify-content: center;
+    column-gap: 6.5rem;
+  }
+  .contact-image {
+    position: relative;
+    width: 100%;
+  }
+
+  .contact-img {
+    width: 420px;
+    position: absolute;
+    top: -2.5rem;
+  }
+
+  .contact-social {
+    justify-content: initial;
+  }
+
+  .contact-title {
+    margin-bottom: 1rem;
+  }
+
+  .contact-sticker-1 {
+    width: 70px;
+    left: 27rem;
+    top: 10rem;
+  }
+
+  .contact-sticker-2 {
+    width: 40px;
+    right: 10rem;
+    bottom: 5.5rem;
+  }
+
+  .footer {
+    padding-block: 5rem 3rem;
+  }
+  .footer-container {
+    row-gap: 3.5rem;
+  }
+
+  .footer-copy {
+    margin-top: 4rem;
+  }
+
+  .scroll-up {
+    right: 3rem;
   }
 }
